@@ -46,11 +46,15 @@ const devWatch = () => {
 /* -------------------------------------------- */
 
 const build_pug = () => {
+  const json_str = fs.readFileSync('./src/combined.json', 'utf-8');
+  const json_data = JSON.parse(json_str);
+
   return src('./src/[!_]*.pug')
     .pipe(
       pug({
         doctype: 'html',
         pretty: false,
+        data: json_data,
       })
     )
     .pipe(dest('./public'));
