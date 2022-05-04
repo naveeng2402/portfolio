@@ -1,0 +1,4 @@
+mixin skill_card(data)
+  .skill-card(data-value=`${data.value}%`)
+    img.skill-card__img(src=data.url)
+    p.skill-card__name= data.name

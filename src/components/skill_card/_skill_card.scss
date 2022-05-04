@@ -1,0 +1,26 @@
+.skill-card {
+  border: 2px solid red;
+  padding-inline: 2em;
+  padding-block: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+
+  &__img {
+    width: 100px;
+    height: 100px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: green;
+    inset: 90% auto 0 0;
+    width: attr(data-value);
+  }
+}
