@@ -1,0 +1,35 @@
+@use '../../scss/abstracts' as *;
+
+.navbar {
+  background-color: green;
+
+  &-collapse {
+    justify-content: center;
+  }
+
+  &-nav {
+    width: 70%;
+    justify-content: space-around;
+
+    @media screen and (max-width: map-get($grid-breakpoints, lg)) {
+      width: 100%;
+    }
+  }
+
+  &-toggler {
+    &:focus {
+      box-shadow: 0 0 0 $spacer-r * 0.25 red;
+    }
+
+    &-icon {
+      background-image: url('https://img.icons8.com/ios-glyphs/30/000000/menu--v1.png');
+    }
+  }
+}
+
+.nav {
+  &-link {
+    color: white;
+    text-align: center;
+  }
+}

@@ -1,4 +1,12 @@
 {
+    "navbar": {
+        "Home": "#home",
+        "About Me": "#about-me",
+        "Skills": "#skills",
+        "Certifications": "#certifications",
+        "Projects": "#projects",
+        "Academic Details": "#academic-details"
+    },
     "hero": {
         "title": "Hi this is Naveen G",
         "subtitle": "I'm a",

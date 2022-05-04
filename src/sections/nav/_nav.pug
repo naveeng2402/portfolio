@@ -1,0 +1,13 @@
+nav.navbar.navbar-expand-lg
+  .container-fluid 
+    button.navbar-toggler(
+      type='button',
+      data-bs-toggle='collapse',
+      data-bs-target='#navbar'
+    )
+      span.navbar-toggler-icon
+    #navbar.collapse.navbar-collapse
+      ul.navbar-nav
+        each link, name in navbar
+          li.nav-item
+            a.nav-link(href=link)= name
