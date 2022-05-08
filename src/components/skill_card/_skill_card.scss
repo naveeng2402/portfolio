@@ -1,14 +1,14 @@
 .skill-card {
-  // aspect-ratio: 3/4;
+  aspect-ratio: 3/4;
   border: 2px solid red;
   padding: 3em 2em;
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 1.5rem;
   justify-content: center;
   align-items: center;
   position: relative;
-  border-radius: 2rem;
+  border-radius: 1rem;
   overflow: hidden;
 
   &__img {
@@ -18,7 +18,7 @@
 
   &__progress {
     position: absolute;
-    inset: 87% 5% 5% 5%;
+    inset: 87% 5% 7% 5%;
     padding: 0.2rem;
     background-color: red;
     border-radius: 200rem;

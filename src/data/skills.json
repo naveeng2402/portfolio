@@ -1,0 +1,67 @@
+{
+  "skills": {
+    "title": "My Skills",
+    "skill_list": [
+      {
+        "url": "./images/python.svg",
+        "name": "Python",
+        "progress": 30
+      },
+      {
+        "url": "./images/python.svg",
+        "name": "Python",
+        "progress": 30
+      },
+      {
+        "url": "./images/python.svg",
+        "name": "Python",
+        "progress": 30
+      },
+      {
+        "url": "./images/python.svg",
+        "name": "Python",
+        "progress": 30
+      },
+      {
+        "url": "./images/python.svg",
+        "name": "Python",
+        "progress": 30
+      },
+      {
+        "url": "./images/python.svg",
+        "name": "Python",
+        "progress": 30
+      },
+      {
+        "url": "./images/python.svg",
+        "name": "Python",
+        "progress": 30
+      },
+      {
+        "url": "./images/python.svg",
+        "name": "Python",
+        "progress": 30
+      },
+      {
+        "url": "./images/python.svg",
+        "name": "Python",
+        "progress": 30
+      },
+      {
+        "url": "./images/python.svg",
+        "name": "Python",
+        "progress": 30
+      },
+      {
+        "url": "./images/python.svg",
+        "name": "Python",
+        "progress": 30
+      },
+      {
+        "url": "./images/python.svg",
+        "name": "Python",
+        "progress": 30
+      }
+    ]
+  }
+}

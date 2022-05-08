@@ -1,0 +1,13 @@
+@use '../../scss/abstracts' as *;
+
+.skills {
+  &__card-wrapper {
+    // outline: 2px solid paleturquoise;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

@@ -1,4 +1,7 @@
 include ../../components/skill_card/_skill_card
 
 section#skills.skills.section
-  +skill_card({url:"./images/python.svg", name:"python", value:"100"})
+  h2.skills__title= skills.title
+  .skills__card-wrapper
+    each skill in skills.skill_list
+      +skill_card({url:skill.url, name:skill.name, progress:skill.progress})

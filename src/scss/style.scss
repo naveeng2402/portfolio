@@ -15,6 +15,12 @@ body {
 .section {
   width: 80vw;
   margin-inline: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $spacer-r;
 
   &--title {
     font-size: 2rem;
