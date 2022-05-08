@@ -1,0 +1,14 @@
+@use '../../scss/abstracts' as *;
+
+.certifications {
+  // outline: 2px solid palegoldenrod;
+
+  &__card-wrapper {
+    // outline: 2px solid paleturquoise;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

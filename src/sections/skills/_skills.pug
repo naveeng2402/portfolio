@@ -1,7 +1,7 @@
 include ../../components/skill_card/_skill_card
 
 section#skills.skills.section
-  h2.skills__title= skills.title
+  h2.section--title= skills.title
   .skills__card-wrapper
     each skill in skills.skill_list
       +skill_card({url:skill.url, name:skill.name, progress:skill.progress})

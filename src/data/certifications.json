@@ -1,0 +1,25 @@
+{
+  "certifications": {
+    "title": "My Certifications",
+    "certification_list": [
+      {
+        "name": "Python for Everybody",
+        "platform": "Coursera",
+        "img_url": "./images/umich.svg",
+        "link": "https://www.coursera.org/account/accomplishments/specialization/PH5K5WWNNDWA"
+      },
+      {
+        "name": "Python for Everybody",
+        "platform": "Coursera",
+        "img_url": "./images/umich.svg",
+        "link": "https://www.coursera.org/account/accomplishments/specialization/PH5K5WWNNDWA"
+      },
+      {
+        "name": "Python for Everybody",
+        "platform": "Coursera",
+        "img_url": "./images/umich.svg",
+        "link": "https://www.coursera.org/account/accomplishments/specialization/PH5K5WWNNDWA"
+      }
+    ]
+  }
+}

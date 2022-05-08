@@ -1,0 +1,7 @@
+include ../../components/certification_card/_certification_card
+
+section#certifications.certifications.section
+  h2.section--title= certifications.title
+  .certifications__card-wrapper
+    each certificate in certifications.certification_list
+      +certification_card(certificate)
