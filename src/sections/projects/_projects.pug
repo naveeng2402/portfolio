@@ -1,0 +1,7 @@
+include ../../components/project_card/_project_card
+
+section#projects.projects.section
+  h2.section--title= projects.title
+  .projects__card-wrapper
+    each project in projects.project_list
+      +project_card(project) 

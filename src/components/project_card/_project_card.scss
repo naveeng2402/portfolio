@@ -1,20 +1,23 @@
 @use '../../scss/abstracts' as *;
 
-.certification-card {
+.project-card {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
   padding: 1em 2rem;
   gap: 1rem;
   border: 2px solid red;
   border-radius: 1rem;
-  text-decoration: none;
-  color: black;
-  flex-basis: 0;
-  justify-content: center;
-  align-items: center;
-  min-width: fit-content;
+  // min-width: fit-content;
 
   @media screen and (max-width: map-get($grid-breakpoints, sm)) {
     flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: map-get($grid-breakpoints, xl)) {
+    max-width: 45%;
   }
 
   &:hover {
@@ -23,19 +26,28 @@
 
   &__img {
     aspect-ratio: 1;
-    width: 75px;
-    border-radius: 5%;
+    width: 150px;
   }
 
   &__content {
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__desc {
+    min-width: 25ch;
+  }
+
+  &__tools-wrapper {
+    display: flex;
+    gap: 0.5rem;
     justify-content: center;
     align-items: center;
   }
 
-  &__name {
-    line-height: 1.5;
+  &__tool {
+    aspect-ratio: 1;
+    width: 50px;
   }
 }
