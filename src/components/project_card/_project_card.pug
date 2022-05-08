@@ -1,9 +1,9 @@
 mixin project_card(data)
-  a.project-card(href=data.link)
-    img.project-card__img(src=data.icon)
+  a.project-card(href=data.link, target='_blank')
+    img.project-card__img(src=data.icon, alt='project_img')
     .project-card__content
       h3.project-card__name= data.name
       p.project-card__desc= data.desc
       .project-card__tools-wrapper
         each tool in data.tools
-          img.project-card__tool(src=tool)
+          img.project-card__tool(src=tool, alt='tool')

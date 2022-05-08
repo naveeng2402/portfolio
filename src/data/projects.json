@@ -17,6 +17,7 @@
         "name": "Dynamic Quiz App",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio turpis blandit eu facilisi integer. Volutpat tortor quis vel lectus ornare. Neque in tellus ante nec dui commodo. Arcu amet tortor.",
         "icon": "https://raw.githubusercontent.com/naveeng2402/Quiz-App/master/Others/icon.svg",
+        "link": "https://github.com/naveeng2402/Quiz-App",
         "tools": [
           "https://doc.qt.io/qtforpython/_static/qtforpython.png",
           "./images/python.svg",

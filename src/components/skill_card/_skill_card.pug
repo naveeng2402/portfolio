@@ -1,6 +1,6 @@
 mixin skill_card(data)
   .skill-card
-    img.skill-card__img(src=data.url)
+    img.skill-card__img(src=data.url, alt='skill_img')
     p.skill-card__name= data.name
     .skill-card__progress
       .skill-card__progress-bar(style=`width:${data.progress}%`)
