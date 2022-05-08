@@ -2,8 +2,29 @@
 @use '../components';
 @use '../sections';
 
+body {
+  margin-bottom: 5rem;
+}
+
 .initial-wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.section {
+  width: 80vw;
+  margin-inline: auto;
+
+  &--title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: $spacer-r * 2;
+  margin-top: $spacer-r * 4;
 }

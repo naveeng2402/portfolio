@@ -1,0 +1,21 @@
+@use "../../scss/abstracts" as *;
+
+.divider{
+    border-bottom: $spacer-r * 0.2 ridge black;
+    border-radius: 50 rem;
+    width: 80vw;
+    margin-inline: auto;
+    position: relative;
+
+    &::after{
+        position: absolute;
+        font: var(--fa-font-solid);
+        content: "\f591";
+    }
+
+    &::after{
+        right: 0;
+        top: 0;
+        transform: translate(90%, -100%);
+    }
+}

@@ -17,5 +17,12 @@
             "SoftwareEngineer",
             "Optimist"
         ]
+    },
+    "about_me": {
+        "title": "About Me",
+        "content": [
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dolor saepe illum corporis, mollitia reprehenderit, dolorum quis expedita voluptate est officiis ea. Veniam dignissimos voluptatem nihil a hic vel tempora?",
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dolor saepe illum corporis, mollitia reprehenderit, dolorum quis expedita voluptate est officiis ea. Veniam dignissimos voluptatem nihil a hic vel tempora?"
+        ]
     }
 }

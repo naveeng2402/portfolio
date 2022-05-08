@@ -1,0 +1,20 @@
+@use '../../scss/abstracts' as *;
+
+.about-me {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $spacer-r;
+
+  &--content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $spacer-r * 0.25;
+  }
+
+  &--content {
+    max-width: 85ch;
+  }
+}

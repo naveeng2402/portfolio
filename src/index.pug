@@ -1,7 +1,10 @@
 extends _base
 
 block content
-  .initial-wrapper
+  header.initial-wrapper
     include sections/nav/_nav
     include sections/hero/_hero
-  include sections/skills/_skills
+  main.px-3.px-md-0
+    include sections/about_me/_about_me
+    include components/divider/_divider
+    include sections/skills/_skills
