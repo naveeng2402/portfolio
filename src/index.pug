@@ -1,4 +1,5 @@
 extends _base
+include components/divider/_divider
 
 block content
   header#header.initial-wrapper
@@ -6,6 +7,6 @@ block content
     include sections/hero/_hero
   main#main.px-3.px-md-0
     include sections/about_me/_about_me
-    include components/divider/_divider
+    +divider('right')
     include sections/skills/_skills
-    include components/divider/_divider
+    +divider('left')

@@ -1,21 +1,32 @@
-@use "../../scss/abstracts" as *;
+@use '../../scss/abstracts' as *;
 
-.divider{
-    border-bottom: $spacer-r * 0.2 ridge black;
-    border-radius: 50 rem;
-    width: 80vw;
-    margin-inline: auto;
-    position: relative;
+.divider-left,
+.divider-right {
+  border-bottom: $spacer-r * 0.2 ridge black;
+  border-radius: 50 rem;
+  width: 80vw;
+  margin-inline: auto;
+  position: relative;
 
-    &::after{
-        position: absolute;
-        font: var(--fa-font-solid);
-        content: "\f591";
-    }
+  &::after {
+    position: absolute;
+    font: var(--fa-font-solid);
+    content: '\f591';
+  }
+}
 
-    &::after{
-        right: 0;
-        top: 0;
-        transform: translate(90%, -100%);
-    }
+.divider-right {
+  &::after {
+    right: 0;
+    top: 0;
+    transform: translate(90%, -100%);
+  }
+}
+
+.divider-left {
+  &::after {
+    left: 0;
+    top: 0;
+    transform: translate(-90%, -100%) rotateY(180deg);
+  }
 }
