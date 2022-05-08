@@ -15,7 +15,9 @@
     "gulp-merge-json": "^2.1.2",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
+    "gulp-svgo": "^2.2.1",
     "prettier": "^2.6.2",
-    "sass": "^1.50.1"
+    "sass": "^1.50.1",
+    "svgo": "^2.8.0"
   }
 }

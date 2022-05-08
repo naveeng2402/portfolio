@@ -2,8 +2,8 @@ const { src, dest, watch } = require('gulp');
 const pug = require('gulp-pug');
 const sass = require('gulp-sass')(require('sass'));
 const merge = require('gulp-merge-json');
+const svgo = require('gulp-svgo');
 const fs = require('fs');
-const { spawnSync } = require('child_process');
 
 const compile_pug = () => {
   // concat_json();
@@ -66,7 +66,14 @@ const build_scss = () => {
     .pipe(dest('./public/css'));
 };
 
+const build_svg = () => {
+  return src('./src/assets/svg/**/*.svg')
+    .pipe(svgo())
+    .pipe(dest('./public/images'));
+};
+
 const build = async () => {
+  await build_svg();
   await build_pug();
   await build_scss();
 };
@@ -74,3 +81,4 @@ const build = async () => {
 exports.default = devWatch;
 exports.build = build;
 exports.json = merge_json;
+exports.svg = build_svg;
