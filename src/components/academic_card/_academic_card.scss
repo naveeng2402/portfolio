@@ -1,0 +1,41 @@
+@use '../../scss/abstracts' as *;
+
+.academic-card {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding: 1em 2rem;
+  gap: 1rem;
+  border: 2px solid red;
+  border-radius: 1rem;
+
+  @media screen and (max-width: map-get($grid-breakpoints, md)) {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__img {
+    aspect-ratio: 1;
+    width: 100px;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  &__place-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  &__place {
+    line-height: normal;
+    font-size: 90%;
+  }
+  &__duration {
+    font-size: 95%;
+  }
+}

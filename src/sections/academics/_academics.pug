@@ -1,0 +1,7 @@
+include ../../components/academic_card/_academic_card
+
+section#academic-details.academic.section
+  h2.section--title= academics.title
+  .academics__card-wrapper
+    each academic in academics.details 
+      +academic_card(academics.details[0])

@@ -24,5 +24,28 @@
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dolor saepe illum corporis, mollitia reprehenderit, dolorum quis expedita voluptate est officiis ea. Veniam dignissimos voluptatem nihil a hic vel tempora?",
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dolor saepe illum corporis, mollitia reprehenderit, dolorum quis expedita voluptate est officiis ea. Veniam dignissimos voluptatem nihil a hic vel tempora?"
         ]
+    },
+    "academics": {
+        "title": "Academic Details",
+        "details": [
+            {
+                "name": "SSLC",
+                "duration": "2020-Present",
+                "img_url": "https://via.placeholder.com/100",
+                "place": [
+                    "Annai Veilankanni's Mat. Hig. Sec. School",
+                    "Saidapet, Chennai-15."
+                ]
+            },
+            {
+                "name": "SSLC",
+                "img_url": "https://via.placeholder.com/100",
+                "duration": "2020-Present",
+                "place": [
+                    "Annai Veilankanni's Mat. Hig. Sec. School",
+                    "Saidapet, Chennai-15."
+                ]
+            }
+        ]
     }
 }
