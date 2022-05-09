@@ -47,5 +47,33 @@
                 ]
             }
         ]
+    },
+    "footer": {
+        "social": [
+            {
+                "name": "Github",
+                "icon": "\uf09b",
+                "link": "https://github.com/naveeng2402"
+            },
+            {
+                "name": "Github",
+                "icon": "\uf09b",
+                "link": "https://github.com/naveeng2402"
+            },
+            {
+                "name": "Github",
+                "icon": "\uf09b",
+                "link": "https://github.com/naveeng2402"
+            },
+            {
+                "name": "Github",
+                "icon": "\uf09b",
+                "link": "https://github.com/naveeng2402"
+            }
+        ],
+        "quote": {
+            "content": "When something is important enough, you do it even if the odds are not in your favor",
+            "author": "Elon Musk"
+        }
     }
 }

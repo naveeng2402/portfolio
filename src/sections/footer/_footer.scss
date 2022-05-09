@@ -1,0 +1,64 @@
+@use '../../scss/abstracts' as *;
+
+.footer {
+  outline: 2px solid tan;
+  padding: 2rem 3rem 5rem 3rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  &__nav-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+
+    @media screen and (max-width: map-get($grid-breakpoints, sm)) {
+      flex-wrap: wrap;
+      justify-content: center;
+      & > * {
+        flex-basis: 1;
+      }
+    }
+  }
+
+  &__nav {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  &__quote-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__author {
+    text-align: end;
+  }
+
+  &__social-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__social {
+    text-decoration: none;
+    &::before {
+      content: attr(data-icon);
+      font: var(--fa-font-brands);
+      font-size: 2rem;
+    }
+
+    &:hover {
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+footer.footer
+  .footer__nav-wrapper
+    each link, name in navbar
+      a.footer__nav(href=link)= name
+  .footer__quote-wrapper
+    h4.footer__quote= footer.quote.content
+    p.footer__author= '- ' + footer.quote.author
+  .footer__social-wrapper
+    each platform in footer.social 
+      a.footer__social(
+        href=platform.link,
+        data-icon=platform.icon,
+        aria-label=platform.nam,
+        target='_blank'
+      )
