@@ -16,6 +16,8 @@
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-svgo": "^2.2.1",
+    "gulp-webp": "^4.0.1",
+    "imagemin-webp": "^7.0.0",
     "prettier": "^2.6.2",
     "sass": "^1.50.1",
     "svgo": "^2.8.0"

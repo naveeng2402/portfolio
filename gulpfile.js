@@ -3,6 +3,7 @@ const pug = require('gulp-pug');
 const sass = require('gulp-sass')(require('sass'));
 const merge = require('gulp-merge-json');
 const svgo = require('gulp-svgo');
+const webp = require('gulp-webp');
 const fs = require('fs');
 
 const compile_pug = () => {
@@ -72,8 +73,19 @@ const build_svg = () => {
     .pipe(dest('./public/images'));
 };
 
-const build = async () => {
+const build_images = () => {
+  return src('./src/assets/images/**/*')
+    .pipe(webp())
+    .pipe(dest('./public/images/'));
+};
+
+const build_assets = async () => {
   await build_svg();
+  await build_images();
+};
+
+const build = async () => {
+  await build_assets();
   await build_pug();
   await build_scss();
 };
@@ -82,3 +94,5 @@ exports.default = devWatch;
 exports.build = build;
 exports.json = merge_json;
 exports.svg = build_svg;
+exports.images = build_images;
+exports.assets = build_assets;
