@@ -8,6 +8,10 @@
   flex-direction: column;
   gap: 3rem;
 
+  background-image: url('../images/footer.webp');
+  background-size: cover;
+  background-position: center;
+
   &__nav-wrapper {
     display: flex;
     justify-content: space-around;
