@@ -1,0 +1,16 @@
+@use 'variables' as *;
+@mixin mq($min: null, $max: null) {
+  @if $min==null {
+    @media screen and (max-width: map-get($grid-breakpoints, $min)) {
+      @content;
+    }
+  } @else if $max==null {
+    @media screen and (min-width: map-get($grid-breakpoints, $min)) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: map-get($grid-breakpoints, $min)) and (max-width: map-get($grid-breakpoints, $max)) {
+      @content;
+    }
+  }
+}
