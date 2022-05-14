@@ -30,3 +30,16 @@ main {
   gap: $spacer-r * 2;
   margin-top: $spacer-r * 4;
 }
+
+.cards {
+  // background-color: aquamarine;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  transition: all 100ms ease;
+  border: 0.1rem solid map-get($primary, 400);
+
+  @include mq(md) {
+    &:hover {
+      transform: translateY(-2%) scale(1.025);
+    }
+  }
+}

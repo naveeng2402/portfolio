@@ -1,5 +1,5 @@
 mixin project_card(data)
-  a.project-card(href=data.link, target='_blank')
+  a.project-card.cards(href=data.link, target='_blank')
     img.project-card__img(src=data.icon, alt='project_img')
     .project-card__content
       h3.project-card__name= data.name

@@ -1,5 +1,5 @@
 mixin certification_card(data)
-  a.certification-card(href=data.link, target='_blank')
+  a.certification-card.cards(href=data.link, target='_blank')
     img.certification-card__img(src=data.img_url, alt='cert_img')
     .certification-card__content
       h3.certification-card__name= data.name

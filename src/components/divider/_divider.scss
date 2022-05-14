@@ -2,7 +2,8 @@
 
 .divider-left,
 .divider-right {
-  border-bottom: $spacer-r * 0.2 ridge black;
+  color: map-get($secondary, 500);
+  border-bottom: $spacer-r * 0.2 ridge map-get($secondary, 500);
   border-radius: 50 rem;
   width: 80vw;
   margin-inline: auto;
@@ -10,6 +11,7 @@
 
   &::after {
     position: absolute;
+    color: inherit;
     font: var(--fa-font-solid);
     content: '\f591';
   }
