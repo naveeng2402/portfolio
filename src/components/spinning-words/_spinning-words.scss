@@ -1,50 +1,72 @@
+@use '../../scss/abstracts' as *;
+
 .spinning-words {
   &-wrapper {
     padding: 1rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mq(xs, sm) {
+      flex-direction: column;
+      max-width: 95vw;
+      $font-size: 1rem;
+    }
 
     > p {
       line-height: normal;
+      text-align: center;
+      color: white;
     }
   }
 
   & {
     overflow: hidden;
-    height: 1.5em;
+    height: 1em;
+    background-color: map-get($primary, 300);
+    border-radius: 1rem;
+    text-align: center;
+    padding-block: 2rem;
+    margin-left: 1rem;
+    @media screen and (max-width: map-get($grid-breakpoints, sm)) {
+      margin: 0px;
+    }
   }
 
   > span {
+    color: white;
+    font-size: 1em;
     display: block;
-    height: 100%;
     line-height: normal;
-    padding-left: 0.25em;
+    padding: 1rem;
+    transform: translateY(-50%);
     animation: spin_words 6s infinite;
   }
 }
 
 @keyframes spin_words {
   10% {
-    transform: translateY(-112%);
+    transform: translateY(-165%);
   }
   25% {
-    transform: translateY(-100%);
+    transform: translateY(-150%);
   }
   35% {
-    transform: translateY(-212%);
+    transform: translateY(-262%);
   }
   50% {
-    transform: translateY(-200%);
+    transform: translateY(-250%);
   }
   60% {
-    transform: translateY(-312%);
+    transform: translateY(-362%);
   }
   75% {
-    transform: translateY(-300%);
+    transform: translateY(-350%);
   }
   85% {
-    transform: translateY(-412%);
+    transform: translateY(-462%);
   }
   100% {
-    transform: translateY(-400%);
+    transform: translateY(-450%);
   }
 }
