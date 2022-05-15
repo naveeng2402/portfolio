@@ -4,6 +4,8 @@ const sass = require('gulp-sass')(require('sass'));
 const merge = require('gulp-merge-json');
 const svgo = require('gulp-svgo');
 const webp = require('gulp-webp');
+const minifyJs = require('gulp-uglify');
+const babel = require('gulp-babel');
 const fs = require('fs');
 
 const compile_pug = () => {
@@ -28,6 +30,17 @@ const compile_scss = () => {
     .pipe(dest('./public/css'));
 };
 
+const compile_js = () => {
+  return src('./src/js/*.js')
+    .pipe(
+      babel({
+        presets: ['@babel/preset-env'],
+      })
+    )
+    .pipe(minifyJs())
+    .pipe(dest('./public/js/'));
+};
+
 const merge_json = () => {
   return src('./src/data/**/*.json')
     .pipe(
@@ -42,6 +55,7 @@ const devWatch = () => {
   watch('./src/data/**/*.json', merge_json);
   watch('./src/**/*.pug', compile_pug);
   watch('./src/**/*.scss', compile_scss);
+  watch('./src/js/**/*.js', compile_js);
 };
 
 /* -------------------------------------------- */
@@ -88,6 +102,7 @@ const build = async () => {
   await build_assets();
   await build_pug();
   await build_scss();
+  await compile_js();
 };
 
 exports.default = devWatch;
