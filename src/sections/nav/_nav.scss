@@ -1,7 +1,23 @@
 @use '../../scss/abstracts' as *;
 
 .navbar {
-  background-color: green;
+  background-color: map-get($primary, 300);
+  color: map-get($primary, 500);
+
+  &-transparent {
+    background-color: transparent;
+    background-image: linear-gradient(black, transparent);
+    color: map-get($primary, 300);
+    font-weight: bold;
+    font-size: 150%;
+    @include mq(xs, lg) {
+      background-image: none;
+      font-weight: normal;
+      font-size: 100%;
+      background-color: map-get($primary, 300);
+      color: map-get($primary, 500);
+    }
+  }
 
   &-collapse {
     justify-content: center;
@@ -11,14 +27,14 @@
     width: 70%;
     justify-content: space-around;
 
-    @media screen and (max-width: map-get($grid-breakpoints, lg)) {
+    @media screen and (max-width: map-get($grid-breakpoints, md)) {
       width: 100%;
     }
   }
 
   &-toggler {
     &:focus {
-      box-shadow: 0 0 0 $spacer-r * 0.25 red;
+      box-shadow: 0 0 0 $spacer-r * 0.25 map-get($primary, 500);
     }
 
     &-icon {
@@ -28,8 +44,53 @@
 }
 
 .nav {
+  &-item {
+    display: flex;
+    justify-content: center;
+  }
   &-link {
-    color: white;
+    color: inherit;
     text-align: center;
+    transition: all 100ms ease;
+    line-height: normal;
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+
+    &-active,
+    &:hover,
+    &:focus {
+      color: inherit;
+      font-weight: bold;
+      transform: translateY(-5%) scale(1.2);
+      &::before {
+        transform: translateX(0%) translateY(-100%);
+      }
+    }
+
+    &-active {
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        border-radius: 2rem;
+        inset: auto 0 0 0;
+        background-color: map-get($secondary, 200);
+        transform: translateY(-100%);
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 10%;
+      border-radius: 2rem;
+      inset: auto 0 0 0;
+      background-color: map-get($secondary, 400);
+      transform: translateX(-100%) translateY(-100%);
+      transition: all 200ms ease-in-out;
+    }
   }
 }

@@ -2,9 +2,8 @@ extends _base
 include components/divider/_divider
 
 block content
-  header#header.initial-wrapper
-    include sections/nav/_nav
-    include sections/hero/_hero
+  include sections/nav/_nav
+  include sections/hero/_hero
   main#main.px-3.px-md-0
     include sections/about_me/_about_me
     +divider('right')

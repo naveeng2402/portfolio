@@ -1,11 +1,11 @@
 @use '../../scss/abstracts' as *;
 
 .hero {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
 
   background-image: url('../images/hero.webp');
   background-size: cover;

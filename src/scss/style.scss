@@ -2,12 +2,6 @@
 @use '../components';
 @use '../sections';
 
-.initial-wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .section {
   width: 80vw;
   margin-inline: auto;

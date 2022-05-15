@@ -1,4 +1,4 @@
-nav.navbar.navbar-expand-lg
+nav#navbar-wrapper.navbar.navbar-expand-lg.fixed-top.navbar-transparent.navbar-move
   .container-fluid 
     button.navbar-toggler(
       type='button',
@@ -11,4 +11,4 @@ nav.navbar.navbar-expand-lg
       ul.navbar-nav
         each link, name in navbar
           li.nav-item
-            a.nav-link(href=link)= name
+            a.nav-link(href=link, onclick='link_click(this)')= name
