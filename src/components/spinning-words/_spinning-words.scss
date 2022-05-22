@@ -34,7 +34,7 @@
   }
 
   > span {
-    color: white;
+    color: map-get($primary, 500);
     font-size: 1em;
     display: block;
     line-height: normal;
