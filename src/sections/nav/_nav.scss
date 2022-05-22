@@ -27,7 +27,7 @@
     width: 70%;
     justify-content: space-around;
 
-    @media screen and (max-width: map-get($grid-breakpoints, md)) {
+    @include mq(xs, lg) {
       width: 100%;
     }
   }
