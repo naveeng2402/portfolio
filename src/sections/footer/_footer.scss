@@ -1,12 +1,13 @@
 @use '../../scss/abstracts' as *;
 
 .footer {
-  outline: 2px solid tan;
   padding: 2rem 3rem 5rem 3rem;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  justify-content: center;
+  align-items: center;
 
   background-image: url('../images/footer.webp');
   background-size: cover;
@@ -30,10 +31,14 @@
   &__nav {
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: white;
+    transition: all 50ms ease;
 
     &:hover {
-      color: black;
+      transform: scale(1.1) translateY(-10%);
+      color: white;
+      font-weight: bold;
+      text-decoration: underline;
     }
   }
 
@@ -41,6 +46,11 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: map-get($primary, 300);
+    font-weight: bold;
+    @include mq(lg) {
+      width: 50%;
+    }
   }
 
   &__author {
@@ -55,14 +65,22 @@
 
   &__social {
     text-decoration: none;
+    transition: all 50ms ease;
+
     &::before {
       content: attr(data-icon);
       font: var(--fa-font-brands);
       font-size: 2rem;
+      color: white;
+      overflow: hidden;
+      border-radius: 50%;
+      background-color: orange;
     }
 
     &:hover {
-      color: black;
+      transform: scale(1.5);
+      transform-origin: center;
+      color: white;
     }
   }
 }
