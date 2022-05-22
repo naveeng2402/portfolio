@@ -3,4 +3,6 @@ mixin certification_card(data)
     img.certification-card__img(src=data.img_url, alt='cert_img')
     .certification-card__content
       h3.certification-card__name= data.name
+      if data.course
+        p.certification-card__course= data.course + ' courses'
       p.certification-card__platform= data.platform

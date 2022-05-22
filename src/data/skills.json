@@ -3,64 +3,89 @@
     "title": "My Skills",
     "skill_list": [
       {
-        "url": "./images/python.svg",
-        "name": "Python",
-        "progress": 30
+        "url": "https://www.svgrepo.com/show/349437/linux.svg",
+        "name": "Linux",
+        "progress": 50
       },
       {
         "url": "./images/python.svg",
         "name": "Python",
+        "progress": 80
+      },
+      {
+        "url": "https://www.svgrepo.com/show/373482/c.svg",
+        "name": "C",
+        "progress": 50
+      },
+      {
+        "url": "https://www.svgrepo.com/show/184143/java.svg",
+        "name": "Java",
         "progress": 30
       },
       {
-        "url": "./images/python.svg",
-        "name": "Python",
+        "url": "https://www.svgrepo.com/show/349402/html5.svg",
+        "name": "HTML",
+        "progress": 70
+      },
+      {
+        "url": "https://www.svgrepo.com/show/349502/sass.svg",
+        "name": "Scss(CSS)",
+        "progress": 70
+      },
+      {
+        "url": "https://www.svgrepo.com/show/349540/typescript.svg",
+        "name": "Js/Ts",
+        "progress": 40
+      },
+      {
+        "url": "https://www.svgrepo.com/show/303301/postgresql-logo.svg",
+        "name": "PostgreSQL",
+        "progress": 60
+      },
+      {
+        "url": "https://www.svgrepo.com/show/331488/mongodb.svg",
+        "name": "MongoDb",
         "progress": 30
       },
       {
-        "url": "./images/python.svg",
-        "name": "Python",
+        "url": "https://www.svgrepo.com/show/354987/figma.svg",
+        "name": "Figma",
+        "progress": 60
+      },
+      {
+        "url": "https://www.svgrepo.com/show/303177/photoshop-cc-logo.svg",
+        "name": "PhotoShop",
+        "progress": 80
+      },
+      {
+        "url": "https://doc.qt.io/qtforpython/_static/qtforpython.png",
+        "name": "PyQt5",
+        "progress": 70
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg",
+        "name": "Gtk3",
+        "progress": 40
+      },
+      {
+        "url": "https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg",
+        "name": "Flask",
+        "progress": 70
+      },
+      {
+        "url": "https://www.svgrepo.com/show/373554/django.svg",
+        "name": "Django",
         "progress": 30
       },
       {
-        "url": "./images/python.svg",
-        "name": "Python",
-        "progress": 30
+        "url": "https://www.svgrepo.com/show/354522/visual-studio-code.svg",
+        "name": "VS Code",
+        "progress": 70
       },
       {
-        "url": "./images/python.svg",
-        "name": "Python",
-        "progress": 30
-      },
-      {
-        "url": "./images/python.svg",
-        "name": "Python",
-        "progress": 30
-      },
-      {
-        "url": "./images/python.svg",
-        "name": "Python",
-        "progress": 30
-      },
-      {
-        "url": "./images/python.svg",
-        "name": "Python",
-        "progress": 30
-      },
-      {
-        "url": "./images/python.svg",
-        "name": "Python",
-        "progress": 30
-      },
-      {
-        "url": "./images/python.svg",
-        "name": "Python",
-        "progress": 30
-      },
-      {
-        "url": "./images/python.svg",
-        "name": "Python",
-        "progress": 30
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg",
+        "name": "MS Office",
+        "progress": 40
       }
     ]
   }

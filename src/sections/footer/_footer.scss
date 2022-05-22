@@ -74,13 +74,19 @@
       color: white;
       overflow: hidden;
       border-radius: 50%;
-      background-color: orange;
     }
 
     &:hover {
       transform: scale(1.5);
       transform-origin: center;
       color: white;
+    }
+
+    &--github {
+      &::before {
+        background-color: black;
+        border-radius: 50%;
+      }
     }
   }
 }

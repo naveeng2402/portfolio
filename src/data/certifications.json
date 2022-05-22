@@ -1,24 +1,40 @@
 {
   "certifications": {
-    "title": "My Certifications",
+    "title": "My Specializations",
     "certification_list": [
       {
         "name": "Python for Everybody",
         "platform": "Coursera",
+        "course": 5,
         "img_url": "./images/umich.svg",
         "link": "https://www.coursera.org/account/accomplishments/specialization/PH5K5WWNNDWA"
       },
       {
-        "name": "Python for Everybody",
+        "name": "Google IT Support",
         "platform": "Coursera",
-        "img_url": "./images/umich.svg",
-        "link": "https://www.coursera.org/account/accomplishments/specialization/PH5K5WWNNDWA"
+        "course": 5,
+        "img_url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg",
+        "link": "https://www.coursera.org/account/accomplishments/professional-cert/XZX2HGAY2Y5F"
       },
       {
-        "name": "Python for Everybody",
+        "name": "PostgreSQL for Everybody",
         "platform": "Coursera",
+        "course": 4,
         "img_url": "./images/umich.svg",
-        "link": "https://www.coursera.org/account/accomplishments/specialization/PH5K5WWNNDWA"
+        "link": "https://www.coursera.org/account/accomplishments/specialization/CA8BQA5LBF2B"
+      },
+      {
+        "name": "Google IT Automation with Python",
+        "platform": "Coursera",
+        "course": 6,
+        "img_url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg",
+        "link": "https://www.coursera.org/account/accomplishments/professional-cert/76XERRNEPFRF"
+      },
+      {
+        "name": "Python Problem solving",
+        "platform": "Hackerank",
+        "img_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+        "link": "https://www.hackerrank.com/certificates/9e027fb9317d"
       }
     ]
   }

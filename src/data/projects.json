@@ -4,7 +4,7 @@
     "project_list": [
       {
         "name": "Dynamic Quiz App",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio turpis blandit eu facilisi integer. Volutpat tortor quis vel lectus ornare. Neque in tellus ante nec dui commodo. Arcu amet tortor.",
+        "desc": "Dynamic quiz app using Json and HTML. This is coded in python using pyqt5 framework",
         "icon": "https://raw.githubusercontent.com/naveeng2402/Quiz-App/master/Others/icon.svg",
         "link": "https://github.com/naveeng2402/Quiz-App",
         "tools": [
@@ -14,14 +14,14 @@
         ]
       },
       {
-        "name": "Dynamic Quiz App",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio turpis blandit eu facilisi integer. Volutpat tortor quis vel lectus ornare. Neque in tellus ante nec dui commodo. Arcu amet tortor.",
-        "icon": "https://raw.githubusercontent.com/naveeng2402/Quiz-App/master/Others/icon.svg",
+        "name": " Railway-Reservation",
+        "desc": "Railway Reservation application that lets you to emulate the Booking, Downloading and Cancelling your tickets that is programmed in C using GTK, sqlite3, CSS, wkhtmltopdf",
+        "icon": "./images/train.webp",
         "link": "https://github.com/naveeng2402/Quiz-App",
         "tools": [
-          "https://doc.qt.io/qtforpython/_static/qtforpython.png",
-          "./images/python.svg",
-          "https://www.svgrepo.com/show/303205/html-5-logo.svg"
+          "https://www.svgrepo.com/show/373482/c.svg",
+          "https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg",
+          "https://www.svgrepo.com/show/374094/sqlite.svg"
         ]
       }
     ]

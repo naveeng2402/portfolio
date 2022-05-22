@@ -10,5 +10,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    @include mq(xs, xl) {
+      flex-direction: column;
+      & > * {
+        width: 100%;
+      }
+    }
   }
 }

@@ -3,7 +3,7 @@
 .certification-card {
   display: flex;
   padding: 1em 2rem;
-  gap: 1rem;
+  gap: 2rem;
   border-radius: 1rem;
   text-decoration: none;
   color: black;
@@ -11,10 +11,6 @@
   justify-content: center;
   align-items: center;
   min-width: fit-content;
-
-  @media screen and (max-width: map-get($grid-breakpoints, sm)) {
-    flex-wrap: wrap;
-  }
 
   &:hover {
     color: black;
@@ -30,11 +26,23 @@
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
   }
 
   &__name {
     line-height: 1.5;
+  }
+
+  @include mq(xs, sm) {
+    flex-direction: column;
+    gap: 1rem;
+
+    &__content {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
   }
 }
